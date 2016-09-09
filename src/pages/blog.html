@@ -1,0 +1,42 @@
+<!-- personal blog -->
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.min.js"></script>
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+</head>
+
+<html ng-app="titles">
+
+<section class="header" id="headerMargin">
+	<div class="row">
+		<div class="small-10 columns">
+      		<h1>suzanne wen</h1>
+      	</div>
+    </div>
+</section>
+
+<!-- number is how many in a row-->
+<body ng-controller="titlesController">
+<div class="row collapse small-up-1 small-centered medium-up-2 medium-centered large-up-2 large-centered" id="marginDiv">
+  <div class="column" align="middle" ng-mouseenter="showPopover()" ng-mouseleave="hidePopover()">
+      <a href="aboutme.html"><img src="../assets/img/me.jpg" alt="aboutMe"></a>
+<!--       <span id="popover" ng-show="popoverVisible">my story</span> -->
+  </div>
+
+  <div class="column" align="middle" ng-mouseenter="showPopover()" ng-mouseleave="hidePopover()">
+    <a href="timeline.html"><img src="../assets/img/capecod.jpg" alt="myStory"></a>
+  </div>
+    <div class="column" align="middle">
+    <img src="../assets/img/flowers.jpg" alt="reflections">
+  </div>
+  <div class="column" align="middle">
+    <a href="photography.html"><img src="../assets/img/camera.jpg" alt="myPhotos"></a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

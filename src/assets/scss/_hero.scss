@@ -1,0 +1,126 @@
+.hero {
+  background: url("../img/heroSuz.jpg") no-repeat center center; //blur??
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden; //removes scrolling
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#002f4b,#e6e6e6);
+		opacity: .4; 
+  }
+  .intro {
+    padding: 3rem;
+    position: relative;
+    top: 45%;
+    // transform: translateY(-50%);
+  }
+  h1 {
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-style: italic;
+  }
+  p {
+    color: #fff;
+    line-height: 1.75em;
+    letter-spacing: 0.25em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Lora', serif;
+    transition: all 0.3s;
+    &:hover {
+      color: #e6e6e6;
+      opacity: 0.8;
+    }
+  }
+  @media only screen and (min-width: 40.063em) {
+    .tech-img {
+      height: 18rem;
+      width: 18rem;
+    }
+    h1 {
+      padding-top: 4.5rem;
+      font-size: 2.5rem;
+    }
+    p {
+    }
+  }
+}
+
+//social media icons
+.icon-button {
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: white;
+  margin-top: 10px;
+  span{
+  display: block;
+  border-radius: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s;  
+  }
+  &:hover span{
+    display: block;
+    border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.5rem;
+  }
+  i {
+  background: none;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 10;
+  line-height: 3rem;
+  transition: all 0.3s;
+  }
+}
+
+.flickr span{
+  background-color: #0063DC;
+}
+
+.facebook span{
+  background-color: #3B5998;
+}
+
+.yelp span{
+  background-color: #d32323;
+}
+
+.gplus span{
+  background-color: #db5a3c;
+}
+
+.icon-button .fi-social-flickr{
+  color: #0063DC;
+}
+
+.icon-button .fi-social-facebook{
+  color: #3b5998;
+}
+
+.icon-button .fi-social-yelp{
+  color: #d32323;
+}

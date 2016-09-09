@@ -1,0 +1,78 @@
+#marginDiv {
+  margin-left: 16vw;
+  margin-right: 16vw;
+
+  img:hover {
+  	background: black;
+  	opacity: 0.6;
+  }
+}
+
+#popover {
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  color: black;
+}
+
+
+.section {
+  h1 {
+    font-family: 'Lora', sans-serif;
+    align: center;
+  }
+}
+
+.item {
+  line-height: 0;
+  letter-spacing: 0em;
+  font-weight: 200;
+  font-family: 'Lora', serif;
+
+  img {
+  margin-right: 10px;
+  margin-top: 10px;
+  }
+}
+
+/* formats the content of each blog page*/
+.content {
+  padding-top: 10vh;
+  padding-bottom: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 16vw;
+  margin-right: 16vw;
+  padding-top: 35px;
+
+  font-size: emCalc(16px);
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.sticky {
+  position: relative;
+  top: 0;
+  padding: 15px;
+
+  p {
+    margin-bottom: 2px;
+
+    letter-spacing: 110;
+    font-weight: 200;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: black;
+  }
+}
+
+a:hover {
+    color: red;
+}
+
+#current {
+      color: gray;
+      opacity: 0.9;
+}
+
