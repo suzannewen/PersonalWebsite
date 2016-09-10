@@ -2,17 +2,14 @@
   margin-left: 16vw;
   margin-right: 16vw;
 
+  .popup {
+    position: absolute;
+  }
+
   img:hover {
   	background: black;
   	opacity: 0.6;
   }
-}
-
-#popover {
-  position: absolute;
-  top: 400px;
-  left: 500px;
-  color: black;
 }
 
 
