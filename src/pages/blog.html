@@ -1,12 +1,4 @@
 <!-- personal blog -->
-<head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-</head>
-
-<html ng-app="titles">
-
 <section class="header" id="headerMargin">
 	<div class="row">
 		<div class="small-10 columns">
@@ -16,22 +8,24 @@
 </section>
 
 <!-- number is how many in a row-->
-<body ng-controller="titlesController">
+<body>
 <div class="row collapse small-up-1 small-centered medium-up-2 medium-centered large-up-2 large-centered" id="marginDiv">
-  <div class="column" align="middle" ng-mouseenter="showPopover()" ng-mouseleave="hidePopover()">
-      <a href="aboutme.html"><img src="../assets/img/me.jpg" alt="aboutMe"></a>
-<!--       <span id="popover" ng-show="popoverVisible">my story</span> -->
+  <div class="column" align="middle">
+      <span class="popup" id="popup1">about me</span>
+      <a href="aboutme.html" onmouseover="popup(1)" onmouseout="popdown(1)" id="img1"><img src="../assets/img/me.jpg" alt="aboutMe"></a>
   </div>
 
   <div class="column" align="middle" ng-mouseenter="showPopover()" ng-mouseleave="hidePopover()">
-    <a href="timeline.html"><img src="../assets/img/capecod.jpg" alt="myStory"></a>
-    <span class="popup">hello</span>
+    <span class="popup" id="popup2">my story</span>
+    <a href="timeline.html" id="img2" onmouseover="popup(2)" onmouseout="popdown(2)"><img src="../assets/img/capecod.jpg" alt="myStory"></a>
   </div>
     <div class="column" align="middle">
-    <img src="../assets/img/flowers.jpg" alt="reflections">
+      <span class="popup" id="popup3">reflections</span>
+      <a href="reflections.html" id="img3" onmouseover="popup(3)" onmouseout="popdown(3)"><img src="../assets/img/flowers.jpg" alt="reflections"></a>
   </div>
   <div class="column" align="middle">
-    <a href="photography.html"><img src="../assets/img/camera.jpg" alt="myPhotos"></a>
+    <span class="popup" id="popup4">photography</span>
+    <a href="photography.html" id="img4" onmouseover="popup(4)" onmouseout="popdown(4)"><img src="../assets/img/camera.jpg" alt="myPhotos"></a>
   </div>
 </div>
 
@@ -39,7 +33,6 @@
         <p><a href="index.html" style="color: black">back to welcome page <br> «</a></p>
 </div>
 
-
-
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 </body>
-</html>

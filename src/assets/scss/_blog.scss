@@ -2,13 +2,23 @@
   margin-left: 16vw;
   margin-right: 16vw;
 
-  .popup {
-    position: absolute;
-  }
+  .column {
+    position: relative;
 
-  img:hover {
-  	background: black;
-  	opacity: 0.6;
+    .popup {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-bottom: 10px;
+      padding-right: 15px;
+
+      color: white;
+      font-family: 'Lora', sans-serif;
+      font-style: italic;
+      font-size: 20px;
+      font-weight: 500;
+      visibility: hidden;
+    }
   }
 }
 
@@ -38,8 +48,8 @@
   padding-bottom: 70px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-left: 16vw;
-  margin-right: 16vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   padding-top: 35px;
 
   font-size: emCalc(16px);
