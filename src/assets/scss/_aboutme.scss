@@ -1,0 +1,48 @@
+.aboutme {
+
+  img {
+    max-height: 75vh;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    padding-left: 0;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    text-align: left;
+
+    p {
+      font-size: 25px;
+    }
+
+    .row {
+      padding-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .titles {
+      padding-left: 0;
+      font-weight: bold;
+      }
+
+    .info {
+    }
+
+  }
+
+  .questions {
+    background-color: #cdebf9;
+
+    padding: 80px;
+    margin: 10px;
+
+    p {
+      font-size: 15px;
+      font-style: normal;
+    }
+  }
+
+}

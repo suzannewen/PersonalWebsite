@@ -1,6 +1,7 @@
 <!-- homepage -->
+
 <body>
-<section class="hero">
+<section class="hero" id="heroImg">
   <div class="row">
     <div class="small-3 columns">
       <a href="https://www.flickr.com/photos/95965677@N06/" class="icon-button flickr">
@@ -27,3 +28,26 @@
   </div>
 </section>
 </body>
+
+<script>
+var index = 0;
+
+window.onload = function () {
+  var imgArray = [
+  "assets/img/heroSuz.jpg",
+  "assets/img/muir.jpg",
+  "assets/img/buffalo.jpg",
+  "assets/img/SF.jpg"];
+
+  setInterval(function () { // rotates through 4 pictures
+    document.getElementById("heroImg").style.background = "url(" + imgArray[index] + ") no-repeat center center";
+    document.getElementById("heroImg").style.backgroundSize = "cover";
+    document.getElementById("heroImg").style.height = "100vh";
+    index ++;
+    if (index === 4) {
+      index = 0;
+    }
+  }, 4000)
+  
+};
+</script>
