@@ -60,21 +60,21 @@
           background-size: 75%
         }
         &.college{
-          background-image: url("../img/rice.png");
+          background-image: url("../img/riceR.jpg");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 60%
+          background-size: 65%
         }
         &.question{
           background-image: url("../img/question.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 55%
+          background-size: 50%
         }
         &.grad{
-          background: none;
+          background-color: #C1DAD6;
           background-image: url("../img/graduation.png");
           background-size: contain;
           background-repeat: no-repeat;
@@ -98,16 +98,16 @@
     top: 200px;
     left: 50%;
     z-index: 0;
-    height: 600px;
+    height: 800px;
   }
   .line2 {
     width: 2px;
     bottom: 0;
     position: absolute;
-    top: 800px;
+    top: 1000px;
     left: 50%;
     z-index: 0;
-    height: 214px;
+    height: 400px;
     opacity: 0.8;
     border-left: 3px dotted white;
   }
@@ -139,9 +139,11 @@
   .circle-right{
     float: left;
     right: 0px !important;
+    display: none;
   }
   .circle-left{
     left: 0px !important;
+    display: none;
   }
 }
 
