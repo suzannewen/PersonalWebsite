@@ -32,15 +32,21 @@
 
   }
 
-  .questions {
-    background-color: #ddd;
+  .moreInfo {
+    margin-top: 20px;
+    font-size: 15px;
+    font-style: normal;
 
-    padding: 80px;
-    margin: 10px;
+    span {
+      font-family: 'Lora', serif;
+      letter-spacing: 0.15em;
+      font-size: 30px;
+      font-style: italic;
+    }
 
-    p {
-      font-size: 15px;
-      font-style: normal;
+    .titles {
+      font-family: 'Lora';
+      font-style: italic;
     }
   }
 

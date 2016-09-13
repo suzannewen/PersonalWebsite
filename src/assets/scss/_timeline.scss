@@ -6,9 +6,6 @@
   padding-bottom: 70px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-left: 16vw;
-  margin-right: 16vw;
-  background-color: #C1DAD6;
   opacity: 0.8;
 
   .path-item{
@@ -46,6 +43,7 @@
         background: white;
         background-size: 156px 156px;
         border-radius: 50%;
+        border: 0.5px solid black;
         width: 10vw;
         height: 10vw;
         position: relative;
@@ -74,13 +72,12 @@
           background-size: 50%
         }
         &.grad{
-          background-color: #C1DAD6;
           background-image: url("../img/graduation.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
           background-size: 85%;
-          border: 2.5px solid white;
+          border: 1px dotted black;
         }
       }
     }
@@ -91,8 +88,8 @@
   }
 
   .line1 {
-    background: white;
-    width: 2px;
+    background: black;
+    width: 1px;
     bottom: 0;
     position: absolute;
     top: 200px;
@@ -101,7 +98,7 @@
     height: 800px;
   }
   .line2 {
-    width: 2px;
+    width: 1px;
     bottom: 0;
     position: absolute;
     top: 1000px;
@@ -109,7 +106,7 @@
     z-index: 0;
     height: 400px;
     opacity: 0.8;
-    border-left: 3px dotted white;
+    border: 1px dotted black;
   }
 }
   
